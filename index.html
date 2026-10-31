@@ -2167,5 +2167,6 @@ setInterval(renderQueueCounter,10000);
 setTimeout(()=>{renderStoreStatus();renderCountdownBadge();if(!isStoreOpen()&&!isLoggedIn&&!isMaintenanceActive())setTimeout(()=>showClosedOverlay(),2000)},500);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal('adminModal');closeModal('editModal');closeModal('ticketDetailModal');closeModal('ticketSuccessModal');closeModal('reviewModal');closeClosedOverlay();closePublicDisplay();closeCustomerForm();LiveChat.close();AIChat.close()}});
 </script>
+<script type="module" src="employee-admin.js"></script>
 </body>
 </html>
